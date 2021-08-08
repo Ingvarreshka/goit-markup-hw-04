@@ -81,7 +81,9 @@ ul {
 /* link navigation header */
 
 .nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  /* display: block; */
   padding: 32px 0;
   color: var(--text-primary);
   font-weight: 500;
@@ -97,9 +99,16 @@ ul {
 
 .main-section {
   padding: 200px 0;
-  background-color: var(--primary-background);
-
   text-align: center;
+  background-color: var(--primary-background);
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/mainsection.jpg);
 }
 
 .main-title {
@@ -309,6 +318,11 @@ ul {
 .secondary-button:hover {
   color: var(--title-color);
   background-color: var(--blue-color);
+}
+
+/* Клиенты */
+.client-section {
+  padding: 94px 0;
 }
 
 /* подвал страницы */
