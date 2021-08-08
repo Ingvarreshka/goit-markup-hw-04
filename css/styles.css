@@ -81,9 +81,7 @@ ul {
 /* link navigation header */
 
 .nav-link {
-  display: flex;
-  align-items: center;
-  /* display: block; */
+  display: block;
   padding: 32px 0;
   color: var(--text-primary);
   font-weight: 500;
@@ -160,13 +158,15 @@ ul {
 
 .contact-link {
   color: var(--text-secondary);
-  display: block;
 }
 
 .contact-link:hover {
   color: var(--blue-color);
 }
-
+.svg-link {
+  display: flex;
+  text-align: center;
+}
 .container-about-us {
   padding: 47px 0 94px;
 }
@@ -206,6 +206,10 @@ ul {
 .info-list {
   display: flex;
   justify-content: space-between;
+}
+
+.svg-item {
+  background-color: var(--background-color-team);
 }
 
 .info-title {
