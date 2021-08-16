@@ -10,6 +10,10 @@
 
   --text-primary: #212121;
   --text-secondary: #757575;
+  /* если я захочу поменять белый цвет толькол текста, а не всё где есть белый цвет
+  поэтому сделал белый в нескольких переменных, для текста, для элементов где белый
+  или фон или рамка белая либо что -то еще  */
+
   --text-btn: #ffffff;
   --title-color: #ffffff;
 }
@@ -42,6 +46,11 @@ ul {
 .centered {
   display: flex;
   align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* контейнер страницы */
@@ -157,9 +166,6 @@ ul {
   margin-left: auto;
 }
 
-.contacts-list-item:hover {
-  fill: var(--blue-color);
-}
 .contacts-list-item + .contacts-list-item {
   margin-left: 50px;
 }
@@ -168,9 +174,9 @@ ul {
   color: var(--text-secondary);
 }
 
-/* .contact-link:hover {
+.contact-link:hover {
   color: var(--blue-color);
-} */
+}
 
 .svg-envelope,
 .svg-phone {
@@ -178,21 +184,14 @@ ul {
   fill: var(--text-secondary);
 }
 
-/* .svg-envelope:hover {
+.svg-envelope:hover,
+.svg-phone:hover,
+.contact-link:hover {
   fill: var(--blue-color);
-} */
-
-/* .svg-phone:hover {
-  fill: var(--blue-color);
-} */
+}
 
 .container-about-us {
   padding: 47px 0 94px;
-}
-
-.flex-between {
-  display: flex;
-  justify-content: space-between;
 }
 
 .team-card {
@@ -215,8 +214,6 @@ ul {
 .info-discription {
   width: 270px;
 }
-
-/* studio page */
 
 .info-container {
   padding: 94px 0 47px;
